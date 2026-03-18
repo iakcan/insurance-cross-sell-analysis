@@ -1,4 +1,4 @@
-```r
+
 # =========================================================
 # Insurance Cross-Sell Analysis
 # Author: Irem Akcan
@@ -153,5 +153,4 @@ wss_values <- sapply(k.values, wss)
 plot(k.values, wss_values, type = "b",
      xlab = "Number of clusters",
      ylab = "WSS")
-```
 
