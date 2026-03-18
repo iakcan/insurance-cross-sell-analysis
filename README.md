@@ -65,11 +65,53 @@ The project applies a combination of statistical and machine learning techniques
 
 ---
 
-### 🧠 Model Insights
+## 📊 Data Visualization & Results
 
-- Logistic regression identifies **Previously_Insured** as the strongest predictor  
-- Vehicle_Age and Vehicle_Damage significantly impact purchasing behavior  
-- Reduced model improves interpretability without sacrificing performance  
+### Distribution of Annual Premium
+
+<p align="center">
+<img src="./images/histogram_premium.png" width="500"/>
+</p>
+
+The premium distribution is right-skewed, indicating that most customers fall into lower premium ranges.
+
+---
+
+### Premium by Gender
+
+<p align="center">
+<img src="./images/boxplot_gender.png" width="500"/>
+</p>
+
+Premium values are broadly similar across genders, with minor variations.
+
+---
+
+### Correlation Analysis
+
+<p align="center">
+<img src="./images/correlation.png" width="500"/>
+</p>
+
+Previously_Insured is the most influential feature negatively associated with response.
+
+---
+
+### Statistical Analysis Results
+
+<p align="center">
+<img src="./images/model_output.png" width="500"/>
+</p>
+
+Statistical tests (t-test, chi-square, ANOVA) show strong significance across key variables.
+
+---
+
+### Model Insights
+
+- Previously insured customers are significantly less likely to convert  
+- Vehicle-related features strongly impact purchasing behavior  
+- Premium levels correlate with customer segmentation
 
 ---
 
