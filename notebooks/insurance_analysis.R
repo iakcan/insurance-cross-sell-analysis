@@ -106,16 +106,40 @@ summary(reduced_model)
 # ========================
 
 # Boxplot
+png("images/boxplot_gender.png", width=800, height=600)
+
 ggplot(train, aes(x = Gender, y = Annual_Premium, fill = Gender)) +
   geom_boxplot()
 
+dev.off()
+
 # Histogram
+png("images/histogram_premium.png", width=800, height=600)
+
 ggplot(train, aes(x = Annual_Premium)) +
-  geom_histogram(bins = 20, fill = "lightgreen")
+  geom_histogram(bins = 20, fill = "steelblue")
+
+dev.off()
 
 # Scatter plot
 ggplot(train, aes(x = Age, y = Annual_Premium)) +
   geom_point(alpha = 0.3)
+
+# Correlation Heatmap
+png("images/correlation.png", width=800, height=600)
+
+corrplot(correlation_matrix, method = "color", type = "upper")
+
+dev.off()
+
+#Elbow Plot
+png("images/elbow.png", width=800, height=600)
+
+plot(k.values, wss_values, type = "b",
+     xlab = "Number of clusters",
+     ylab = "WSS")
+
+dev.off()
 
 # ========================
 # 12. Mixed Effects Model
