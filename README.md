@@ -106,7 +106,7 @@ The full analysis and code are available in:
 
 ```
 
-R_Codes_and_Outputs.docx
+notebooks/insurance_analysis.R
 
 ```
 
